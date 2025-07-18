@@ -10,7 +10,7 @@ CC = gcc
 
 INCLUDES = -I../..
 CFLAGS = -Wall -fPIC `pkg-config --cflags libxfce4panel-2.0` ${INCLUDES} -DLXPLUG
-LIBS = `pkg-config --libs libxfce4panel-2.0`
+LIBS = `pkg-config --libs libxfce4panel-2.0 libpulse`
 
 all: ${OBJS}
 	${CC} -o lib$(MODULE).so -shared -fPIC ${OBJS} ${LIBS}

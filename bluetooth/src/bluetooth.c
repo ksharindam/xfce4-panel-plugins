@@ -35,7 +35,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 /* Typedefs and macros                                                        */
 /*----------------------------------------------------------------------------*/
 
-//#define DEBUG_ON
+#define DEBUG_ON
 #ifdef DEBUG_ON
 #define DEBUG(fmt,args...) if(getenv("DEBUG_BT"))g_message("bt: " fmt,##args)
 #define DEBUG_VAR(fmt,var,args...) if(getenv("DEBUG_BT")){gchar*vp=g_variant_print(var,TRUE);g_message("bt: " fmt,##args,vp);g_free(vp);}

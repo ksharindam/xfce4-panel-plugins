@@ -8,7 +8,7 @@
 #ifdef DEBUG_ON
 #define DEBUG(fmt,args...) if(getenv("DEBUG_BT"))g_message("bt: " fmt,##args)
 #else
-#define DEBUG
+#define DEBUG(fmt,args...)
 #endif
 
 static const gchar introspection_xml[] =
