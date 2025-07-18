@@ -1,0 +1,10 @@
+[Xfce Panel]
+Type=X-XFCE-PanelPlugin
+Encoding=UTF-8
+Name=Network Manager Applet
+Comment=Manage Wifi and Wired Networks
+Icon=network-idle
+X-XFCE-Module=networkman
+X-XFCE-Internal=true
+X-XFCE-Unique=false
+X-XFCE-API=2.0

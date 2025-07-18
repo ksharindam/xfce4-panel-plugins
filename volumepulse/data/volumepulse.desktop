@@ -1,0 +1,10 @@
+[Xfce Panel]
+Type=X-XFCE-PanelPlugin
+Encoding=UTF-8
+Name=VolumePulse
+Comment=PulseAudio volume control
+Icon=audio-volume-high
+X-XFCE-Module=volumepulse
+X-XFCE-Internal=true
+X-XFCE-Unique=false
+X-XFCE-API=2.0

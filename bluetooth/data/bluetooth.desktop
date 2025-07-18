@@ -1,0 +1,10 @@
+[Xfce Panel]
+Type=X-XFCE-PanelPlugin
+Encoding=UTF-8
+Name=Bluetooth
+Comment=Manage bluetooth devices
+Icon=preferences-system-bluetooth
+X-XFCE-Module=bluetooth
+X-XFCE-Internal=true
+X-XFCE-Unique=false
+X-XFCE-API=2.0
