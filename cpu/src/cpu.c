@@ -46,7 +46,8 @@
 
 //#include "plugin.h"
 #include <libxfce4panel/libxfce4panel.h>
-
+// for xfce_spawn_command_line()
+#include <libxfce4ui/libxfce4ui.h>
 
 #define BORDER_SIZE 2
 #define PLUGIN_WIDTH 44
@@ -290,14 +291,12 @@ on_button_press(GtkWidget *button, GdkEvent *event, gpointer data)
 {
     if ( event->button.button == 1 ) //When left click
     {
-    	if ( fork() == 0) {
-    		wait(NULL);
-    	} else {
-            char arg0[7] = "lxtask";
-            char* const  argv[2] = {arg0, NULL};
-    		execvp("lxtask", argv);
-    		perror("execvp");
-    	}
+        xfce_spawn_command_line (gdk_screen_get_default (),// screen
+                                 "lxtask",// command
+                                 FALSE, // in_terminal
+                                 FALSE, // startup_notification
+                                 TRUE,  // child process
+                                 NULL); // error
         return TRUE;
     }
     return FALSE;

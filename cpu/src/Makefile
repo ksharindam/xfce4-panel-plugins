@@ -3,7 +3,7 @@ LIBDIR = /usr/lib/`gcc -dumpmachine`
 PLUGIN_DIR = $(LIBDIR)/xfce4/panel/plugins
 DESKTOP_DIR = /usr/share/xfce4/panel/plugins
 DESTDIR =
-CFLAGS = `pkg-config --cflags --libs libxfce4panel-2.0` -Wl,-rpath=$(LIBDIR) -shared -fPIC -Wall
+CFLAGS = `pkg-config --cflags --libs libxfce4panel-2.0 libxfce4ui-2` -Wl,-rpath=$(LIBDIR) -shared -fPIC -Wall
 all:
 	gcc -o lib$(MODULE).so $(CFLAGS) $(MODULE).c
 	

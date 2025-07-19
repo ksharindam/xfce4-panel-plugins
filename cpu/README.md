@@ -6,6 +6,7 @@ It is ported from pplug-cpu.
 install these build dependencies...  
 * libgtk-3-dev  
 * libxfce4panel-2.0-dev  
+* libxfce4ui-2-dev  
 
 Open terminal and change directory to src directory.  
 Run this command...  
