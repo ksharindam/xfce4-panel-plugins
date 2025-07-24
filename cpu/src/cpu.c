@@ -292,7 +292,7 @@ on_button_press(GtkWidget *button, GdkEvent *event, gpointer data)
     if ( event->button.button == 1 ) //When left click
     {
         xfce_spawn_command_line (gdk_screen_get_default (),// screen
-                                 "lxtask",// command
+                                 "xfce4-taskmanager",// command
                                  FALSE, // in_terminal
                                  FALSE, // startup_notification
                                  TRUE,  // child process
